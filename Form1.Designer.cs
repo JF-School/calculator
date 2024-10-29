@@ -48,6 +48,7 @@
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.MouseHover += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSubtract
             // 
@@ -59,6 +60,7 @@
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
+            this.btnSubtract.MouseHover += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btnMultiply
             // 
@@ -70,6 +72,7 @@
             this.btnMultiply.Text = "×";
             this.btnMultiply.UseVisualStyleBackColor = true;
             this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
+            this.btnMultiply.MouseHover += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnDivide
             // 
@@ -81,6 +84,7 @@
             this.btnDivide.Text = "÷";
             this.btnDivide.UseVisualStyleBackColor = true;
             this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
+            this.btnDivide.MouseHover += new System.EventHandler(this.btnDivide_Click);
             // 
             // lblAdd
             // 
@@ -139,8 +143,10 @@
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.btnAdd);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = " ";
+            this.Text = " Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
